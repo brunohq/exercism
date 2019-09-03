@@ -1,0 +1,9 @@
+.exercism/
+*_test.rb
+*.md
+*.spec.js
+*.config.js
+package*.json
+node_modules/
+.eslintrc
+
