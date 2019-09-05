@@ -1,9 +1,21 @@
+# exercism
 .exercism/
-*_test.rb
 *.md
+
+# ruby track
+*_test.rb
+
+# javascript track
 *.spec.js
 *.config.js
-package*.json
+
+# typescript track
+*.test.ts
+tsconfig.json
+
+# npm && yarn && eslint
 node_modules/
-.eslintrc
+package*.json
+yarn.lock
+.eslint*
 
