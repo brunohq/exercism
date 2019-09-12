@@ -1,6 +1,5 @@
 class RailFenceCipher
   def self.encode(string, rails)
-    # p string
     encoded = Hash.new('')
     current_rail = 1
     direction = 'down'
