@@ -18,7 +18,11 @@ class Scrabble
   def score
     return 0 if word.nil?
 
-    word.upcase.tr('^A-Z', '').chars.map { |char| get_points(char) }.sum
+    word.upcase.scan(/./).sum { |char| get_points(char) }
+  end
+
+  def self.score(word)
+    new(word).score
   end
 
   private
@@ -30,6 +34,6 @@ class Scrabble
       return value if letters.include?(char)
     end
 
-    return 0
+    0
   end
 end
